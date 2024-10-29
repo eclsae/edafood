@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продуктовый помощник</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Продуктовый помощник</h1>
+        <nav>
+            <ul>
+                <li><a href="#recipes">Рецепты</a></li>
+                <li><a href="#add-recipe">Добавить рецепт</a></li>
+                <li><a href="#favorites">Избранное</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 style="text-align: center;">Добро пожаловать в наш кулинарный мир!</h2>
+        <div class="slider-container">
+
+            <div class="slider">
+                <img src="https://i.imgur.com/jwNDOZT.jpeg" alt="Блюдо 1">
+                <img src="https://i.imgur.com/I0hqFz9.jpeg" alt="Блюдо 2">
+                <img src="https://i.imgur.com/ynx6tJh.jpeg" alt="Блюдо 3">
+                <img src="https://i.imgur.com/sJdPWj8.jpeg" alt="Блюдо 4">
+                <img src="https://i.imgur.com/lPl0kXu.jpeg" alt="Блюдо 5">
+                <img src="https://i.imgur.com/6blhgin.jpeg" alt="Блюдо 6">
+                <img src="https://i.imgur.com/VZesE2j.jpeg" alt="Блюдо 7">
+            </div>
+            <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+            <button class="next-button" aria-label="Посмотреть следующий слайд">&gt;</button>
+        </div>
+
+        <section id="recipes">
+            <h2>Рецепты</h2>
+            <div class="recipe-card-container">
+                <a href="recepts/solyanka.html"><div class="recipe-card">
+                    <img src="https://i.imgur.com/jwNDOZT.jpeg" alt="Блюдо 1"></a>
+                    <h3>Солянка</h3>
+                    <button class="favorite-button">Добавить в избранное</button>
+                </div>
+                <div class="recipe-card">
+                    <a href="recepts/ris.html"><img src="https://i.imgur.com/I0hqFz9.jpeg" alt="Блюдо 2"></a>
+                    <h3>Рис с овощами</h3>
+                    <button class="favorite-button">Добавить в избранное</button>
+                </div>
+                <div class="recipe-card">
+                    <a href="recepts/grecheski.html"><img src="https://i.imgur.com/ynx6tJh.jpeg" alt="Блюдо 3"></a>
+                    <h3>Греческий салат</h3>
+                    <button class="favorite-button">Добавить в избранное</button>
+                </div>
+                <div class="recipe-card">
+                    <a href="recepts/carbonara.html"><img src="https://i.imgur.com/c8Gpujx.jpeg" alt="Блюдо 4"></a>
+                    <h3>Паста Carbonara</h3>
+                    <button class="favorite-button">Добавить в избранное</button>
+                </div>
+                <div class="recipe-card">
+                    <a href="recepts/tortilia.html"><img src="https://i.imgur.com/VZesE2j.jpeg" alt="Блюдо 5"></a>
+                    <h3>Тортилья</h3>
+                    <button class="favorite-button">Добавить в избранное</button>
+                </div>
+                <div class="recipe-card">
+                    <a href="recepts/cesar.html"><img src="https://i.imgur.com/MPyCn8s.jpeg" alt="Блюдо 6"></a>
+                    <h3>Цезарь салат</h3>
+                    <button class="favorite-button">Добавить в избранное</button>
+                </div>
+                <div class="recipe-card">
+                    <a href="recepts/pizza.html"><img src="https://i.imgur.com/6blhgin.jpeg" alt="Блюдо 7"></a>
+                    <h3>Пицца Маргарита</h3>
+                    <button class="favorite-button">Добавить в избранное</button>
+                </div>
+                <div class="recipe-card">
+                    <a href="recepts/minestrone.html"><img src="https://i.imgur.com/fqNpV1r.jpeg" alt="Блюдо 8"></a>
+                    <h3>Суп Минестроне</h3>
+                    <button class="favorite-button">Добавить в избранное</button>
+                </div>
+                <div class="recipe-card">
+                    <a href="recepts/burger.html"><img src="https://i.imgur.com/WXmO648.jpeg" alt="Блюдо 9"></a><br>
+                    <h3>Бургер</h3>
+                    <button class="favorite-button">Добавить в избранное</button>
+                </div>
+                <div class="recipe-card">
+                    <a href="recepts/chicken.html"><img src="https://i.imgur.com/8HFghxC.jpeg" alt="Блюдо 10"></a>
+                    <h3>Куриные крылышки в медовом соусе</h3>
+                    <button class="favorite-button">Добавить в избранное</button>
+                </div>
+                <div class="recipe-card">
+                    <a href="recepts/lasania.html"><img src="https://i.imgur.com/VZesE2j.jpeg" alt="Блюдо 11"></a>
+                    <h3>Лазанья</h3>
+                    <button class="favorite-button">Добавить в избранное</button>
+                </div>
+                <div class="recipe-card">
+                    <a href="recepts/fahitas.html"><img src="https://i.imgur.com/l2wgen2.jpeg" alt="Блюдо 12"></a>
+                    <h3>Фахитас</h3>
+                    <button class="favorite-button">Добавить в избранное</button>
+                </div>
+                <div class="recipe-card">
+                    <a href="recepts/mashrooms.html"><img src="https://i.imgur.com/o8uDWQ6.jpeg" alt="Блюдо 13"></a>
+                    <h3>Ризотто с грибами</h3>
+                    <button class="favorite-button">Добавить в избранное</button>
+                </div>
+                <div class="recipe-card">
+                    <a href="recepts/salatkinoa.html"><img src="https://i.imgur.com/Oed4taT.jpeg" alt="Салат из киноа"></a>
+                    <h3>Салат из киноа</h3>
+                    <button class="favorite-button">Добавить в избранное</button>
+                </div>
+                <div class="recipe-card">
+                    <a href="recepts/tort.html"><img src="https://i.imgur.com/7yqWByI.png" alt="Шоколадный торт"></a>
+                    <h3>Шоколадный торт</h3>
+                    <button class="favorite-button">Добавить в избранное</button>
+                </div>
+                <div class="recipe-card">
+                    <a href="recepts/ovoshi.html"><img src="https://i.imgur.com/Y1rPwbe.jpeg" alt="Овощи на гриле"></a>
+                    <h3>Овощи на гриле</h3>
+                    <button class="favorite-button">Добавить в избранное</button>
+                </div>
+                <div class="recipe-card">
+                    <a href="recepts/fish.html"><img src="https://i.imgur.com/jMhzqPv.jpeg" alt="Запеченная рыба"></a>
+                    <h3>Запеченная рыба</h3>
+                    <button class="favorite-button">Добавить в избранное</button>
+                </div>
+                <div class="recipe-card">
+                    <a href="recepts/keks.html"><img src="https://i.imgur.com/mwyeTtM.jpeg" alt="Кексы с черникой"></a>
+                    <h3>Кексы с черникой</h3>
+                    <button class="favorite-button">Добавить в избранное</button>
+                </div>
+                <div class="recipe-card">
+                    <a href="recepts/avocado.html"><img src="https://i.imgur.com/So7evVa.jpeg" alt="Тосты с авокадо"></a>
+                    <h3>Тосты с авокадо</h3>
+                    <button class="favorite-button">Добавить в избранное</button>
+                </div>
+                <div class="recipe-card">
+                    <a href="recepts/pirog.html"><img src="https://i.imgur.com/l9jpwBA.jpeg" alt="Пирог с яблоками"></a>
+                    <h3>Пирог с яблоками</h3>
+                    <button class="favorite-button">Добавить в избранное</button>
+                </div>
+                <div class="recipe-card">
+                    <a href="recepts/grecheski.html"><img src="https://i.imgur.com/j74MoAZ.jpeg" alt="Греческий салат"></a>
+                    <h3>Греческий салат</h3>
+                    <button class="favorite-button">Добавить в избранное</button>
+                </div>
+                <div class="recipe-card">
+                    <a href="recepts/supchicken.html"><img src="https://i.imgur.com/5HXlS8k.jpeg" alt="Суп куриный"></a>
+                    <h3>Суп куриный</h3>
+                    <button class="favorite-button">Добавить в избранное</button>
+                </div>
+        </section>
+
+        <section id="add-recipe">
+            <h2>Добавить рецепт</h2>
+            <form>
+                <label for="recipe-name">Название рецепта:</label>
+                <input type="text" id="recipe-name" name="recipe-name" required>
+
+                <label for="ingredients">Ингредиенты:</label>
+                <textarea id="ingredients" name="ingredients" required></textarea>
+
+                <label for="instructions">Приготовление:</label>
+                <textarea id="instructions" name="instructions" required></textarea>
+
+                <button type="submit">Опубликовать</button>
+            </form>
+        </section>
+
+        <section id="favorites">
+            <h2>Избранное</h2>
+            <div id="favorites-list">
+                <p>Ваши избранные рецепты будут отображаться здесь.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 edafood</p>
+    </footer>
+
+    <button class="scroll-to-top" onclick="scrollToTop()">↑ Наверх</button>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+    <script src="./script.js"></script>
+    <script src="./script2.js"></script>
+</body>
+
+</html>

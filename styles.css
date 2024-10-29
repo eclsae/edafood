@@ -1,0 +1,475 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    
+}
+
+header {
+    background: linear-gradient(90deg, #ff6f61, #de5d34);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-decoration: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffec40;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+h2 {
+    color: #de5d34;
+    margin-bottom: 10px;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.slider-container {
+    position: relative;
+    margin: 20px auto;
+    max-width: 600px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #de5d34;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.prev-button:hover,
+.next-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #ff6f61;
+    outline: none;
+}
+
+form button {
+    padding: 10px;
+    background: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #de5d34;
+}
+
+
+/* styles.css */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.recipe-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.recipe-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card h3 {
+    font-size: 18px;
+    margin: 10px;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    flex: 1;
+}
+
+
+
+.favorite-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 0 0 8px 8px;
+}
+
+.favorite-button:hover {
+    background-color: #218838;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background: #333;
+    color: white;
+    border-radius: 15px;
+}
+
+/* Кнопка навигации наверх */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    display: none; /* Скрываем кнопку по умолчанию */
+    z-index: 1000;
+}
+
+.scroll-to-top:hover {
+    background-color: #218838;
+}
+
+/* Адаптивность для смартфонов */
+@media (max-width: 600px) {
+    header {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .recipe-card {
+        margin-top: 10px;
+    }
+}
+
+
+
+/* Адаптация под мобильные устройства */
+
+
+.slider-container {
+    width: 100%; /* Задаем ширину 100% */
+    max-width: 1200px; /* Максимальная ширина для больших экранов */
+    overflow: hidden; /* Прячем переполнение */
+    margin: 0 auto; /* Центруем контейнер */
+}
+
+.slider {
+    display: flex; /* Для использования Flexbox */
+    transition: transform 0.5s ease; /* Плавный переход при изменении */
+}
+
+.slide {
+    flex: 0 0 100%; /* Каждому слайду назначаем 100% ширины контейнера */
+    box-sizing: border-box; /* Учитываем отступы и границы */
+}
+
+
+@media (max-width: 768px) { /* Для планшетов и мобильников */
+    .slider-container {
+        height: auto; /* Авто высота */
+    }
+    .slide {
+        flex: 0 0 100%; /* По-прежнему каждый слайд будет занимать 100% ширины */
+    }
+}
+
+@media (max-width: 480px) {
+    .slider-container {
+        height: auto; /* Убедитесь, что высота реагирует на размер контента */
+    }
+}
+
+
+.slide img {
+    width: 100%; /* Адаптивные изображения */
+    height: auto; /* Сохраняем пропорции */
+    display: block; /* Убираем пробелы под изображением */
+}
+
+
+.slider-container, .slider, .slide {
+    margin: 0; /* Убираем лишние отступы */
+    padding: 0; /* Убираем лишние отступы */
+}
+
+
+@media (max-width: 768px) {
+    .recipe-card {
+        flex: 1 1 100%; /* На маленьких экранах карточки занимают 100% ширины */
+    }
+}
+
+@media (max-width: 480px) {
+    .recipe-card {
+        font-size: 0.9rem; /* Уменьшение размера шрифта для маленьких экранов */
+    }
+}
+
+
+.recipe-image {
+    width: 100%;
+    height: auto; /* Сохраняет пропорции изображения */
+}
+
+
+.container {
+    width: 100%; /* Используйте 100% ширины для контейнеров */
+    max-width: 1200px; /* Ограничение максимальной ширины, если нужно */
+    margin: 0 auto; /* Центрирование контейнера */
+}
+
+
+.empty-block {
+    display: none; /* Скрыть пустые блоки */
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет карточкам переноситься на следующую строку */
+    gap: 16px; /* Отступы между элементами */
+}
+
+.recipe-card {
+    flex: 1 1 300px; /* Ширина карточки, основанная на доступном пространстве */
+    max-width: 100%; /* Обеспечивает, что карточка не превышает ширину контейнера */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 8px;
+}
+
+.favorite-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 0 0 8px 8px;
+}
+
+.favorite-button:hover {
+    background-color: #218838;
+}
+
+/* scroll */
+
+/* Остальной код остается прежним */
+
+.recipe-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Расстояние между карточками */
+}
+
+.recipe-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(33.33% - 20px); /* Три карточки в ряд */
+    transition: transform 0.3s;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px); /* Эффект подъема при наведении */
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 200px; /* Фиксированная высота изображения */
+    object-fit: cover;
+}
+
+.favorite-button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    font-size: 16px;
+}
+
+.favorite-button:hover {
+    background: #de5d34;
+}
+
+.favorites-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Добавьте дополнительные стили по мере необходимости */
